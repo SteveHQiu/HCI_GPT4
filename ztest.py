@@ -1,4 +1,5 @@
-#%%
+#%% Testing pipeline for scraping HTML data 
+
 import time
 
 # Webscraper 
@@ -30,5 +31,4 @@ html_out = driver.page_source
 time.sleep(3)
 with open("ztest.html", "w+", encoding="utf-8") as file:
     file.write(html_out)
-    
 #%%
